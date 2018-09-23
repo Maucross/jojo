@@ -34,6 +34,12 @@ namespace jojo.Controllers
 
             return View();
         }
+        public IActionResult Prestamo()
+        {
+            ViewData["Message"] = "Your Prestamo page.";
+
+            return View();
+        }
 
         public IActionResult Error()
         {
