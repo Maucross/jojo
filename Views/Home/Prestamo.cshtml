@@ -1,0 +1,47 @@
+@{
+    ViewData["Title"] = "Prestamo";
+}
+<h1>@ViewData["Title"]</h1>
+
+
+<div class="row">
+<div class="col-md-4">
+<form asp-action="GUardar">
+
+    <h3>Publicación</h3<br>
+
+    <div class="form-group">
+        <h5>Código del Ejemplar: </h5><input asp-for="codigoEjemplar" class="form-control" />
+    </div><br>
+    <div class="form-group">
+        <h5>Título: </h5><input asp-for="Titulo" class="form-control"/><br>
+                         <input  type="submit" value="search" class="btn btn-primary">
+    </div><br>
+    <div class="form-group">
+        <h5>Tipo: </h5><input asp-for="Tipo" class="form-control" />
+    </div><br>
+    <div class="form-group">
+        <h5>Autor: </h5><input asp-for="Autor" class="form-control" />
+    </div><br>
+    <div class="form-group">
+        <h5>Estado:</h5><input asp-for="Estado" class="form-control" />
+    </div><br>
+    <div class="form-group">
+        <h5>Ubicación:</h5><input asp-for="Ubicación" class="form-control" />
+    </div><br>
+
+    <h3>Lector</h3>
+    <div class="form-group">
+        <h5>Código del Lector:</h5><input asp-for="codigoLector" class="form-control" />
+    </div><br>
+    <div class="form-group">
+        <h5>Nombre:</h5><input asp-for="Nombre" class="form-control" />
+    </div><br><br>
+    <div class="form-group">
+    <input type="submit" value="Guardar" class="btn btn-primary"/>
+        <input type="submit" value="Limpiar" class="btn btn-primary" />
+    </div>
+</form>
+</div>
+</div>
+<h3>@ViewData["Message"]</h3>

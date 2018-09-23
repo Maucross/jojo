@@ -28,6 +28,12 @@ namespace jojo.Controllers
 
             return View();
         }
+        public IActionResult Login()
+        {
+            ViewData["Message"] = "Your login page.";
+
+            return View();
+        }
 
         public IActionResult Error()
         {
